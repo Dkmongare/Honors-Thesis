@@ -1,2 +1,0 @@
-# Honors-Thesis
-WiDS Datathon
