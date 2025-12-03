@@ -35,15 +35,6 @@ This project analyzes **Apple Inc. (AAPL)** stock price data from **January 1, 2
 - **Distribution:** Right-skewed (long-term uptrend dominates recent years)
 - **Volume:** Mean ≈ 256M shares/day | Median ≈ 167M shares/day (high-volume outliers present)
 
-## #Project Structure
-
-```
-Honors-Thesis/
-├── README.md                 # This file
-├── yfinancedata.ipynb        # Main analysis notebook
-└── READ.ME                   # Project notes
-```
-
 ### Methodology
 
 #### 1. Exploratory Data Analysis (EDA)
