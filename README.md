@@ -31,7 +31,7 @@ This project analyzes **Apple Inc. (AAPL)** stock price data from **January 1, 2
 #### 1. Exploratory Data Analysis (EDA)
 
 #### Price Analysis
-- **Linear & Log-scale plots:** Log scale reveals underlying growth patterns without recent-year visual dominance
+- **Linear & Log-scale plots:** 
 
 
 #### Technical Indicators
