@@ -3,9 +3,7 @@
 - This project focuses on applying data science and machine learning techniques to financial market analysis using stock data from Yahoo Finance. 
 - It covers a wide range of topics including data preprocessing, exploratory data analysis, technical indicators, trading strategy design, backtesting, portfolio optimization, and predictive modeling.
 
-- The project explores moving averages, technical indicators, and trading strategies such as Moving Average Crossover and Mean Reversion. 
-- It incorporates machine learning models to forecast stock returns, evaluates their performance using multiple metrics, and visualizes the results. 
-- Additionally, it introduces core financial models such as the Capital Asset Pricing Model (CAPM) and the Efficient Frontier
+- The project explores moving averages, technical indicators, and trading strategies such as Moving Average Crossovers.
 
 ## Part 1: 
 ## AAPL Stock Analysis & Moving Average Crossover Strategy
@@ -17,7 +15,6 @@ This project analyzes **Apple Inc. (AAPL)** stock price data from **January 1, 2
 - Historical price trends and volatility analysis
 - Simple Moving Average (SMA) indicators (10-day and 50-day)
 - Moving Average Crossover trading strategy implementation
-- Backtesting and portfolio performance evaluation
 
 ### Dataset
 
@@ -28,12 +25,6 @@ This project analyzes **Apple Inc. (AAPL)** stock price data from **January 1, 2
 - **Records:** 3,272 trading days
 - **Features:** Open, High, Low, Close, Adj Close, Volume
 
-#### Data Characteristics
-
-- **Price Range:** $5.76 (minimum, adjusted for splits) to $179.18 (maximum)
-- **Mean Close:** ~$49.26 | **Median Close:** ~$27.19
-- **Distribution:** Right-skewed (long-term uptrend dominates recent years)
-- **Volume:** Mean ≈ 256M shares/day | Median ≈ 167M shares/day (high-volume outliers present)
 
 ### Methodology
 
@@ -41,17 +32,13 @@ This project analyzes **Apple Inc. (AAPL)** stock price data from **January 1, 2
 
 #### Price Analysis
 - **Linear & Log-scale plots:** Log scale reveals underlying growth patterns without recent-year visual dominance
-- **Annual returns bar chart:** Green (positive) vs. red (negative) returns by year
-- **Daily returns histogram:** Distribution of daily percentage changes
+
 
 #### Technical Indicators
-- **10-day SMA (MA10):** Responsive, tracks short-term price swings
-- **50-day SMA (MA50):** Smooth, lags behind MA10; acts as trend filter
+- **10-day SMA (MA10):** 
+- **50-day SMA (MA50):** 
 
-#### Key Findings
-- Clear long-term uptrend from 2010 to 2022
-- MA10 stays below MA50 during declines, above during rallies
-- Crossovers signal momentum shifts: MA10 > MA50 = bullish, MA10 < MA50 = bearish
+
 
 ### 2. Trading Strategy: Moving Average Crossover
 
@@ -64,8 +51,6 @@ Sell Signal: data['Position'] = -1  when MA10 crosses below MA50
 #### Strategy Characteristics
 - **Frequent whipsaws:** Many quick alternating buy/sell signals (2010–2020)
 - **Quiet periods:** Fewer signals during 2020–2021 (only 1 buy, 3 sells)
-- **Signal bias:** More red (sell) arrows than green (buy) arrows overall
-- **Implications:** Strategy is noisy; may require smoothing or MA gap filters to reduce false signals
 
 ### 3. Portfolio Backtesting
 
