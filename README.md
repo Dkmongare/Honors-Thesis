@@ -83,3 +83,10 @@ seaborn          # Statistical visualization
 
 Python 3.7+
 
+
+
+# Install scikit-learn
+python3 -m pip install scikit-learn
+
+# Install statsmodels
+python3 -m pip install statsmodels
